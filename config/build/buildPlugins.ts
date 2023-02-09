@@ -1,7 +1,7 @@
 import { BuildOptions } from './types/config';
-import HtmlWebpackPlugin from "html-webpack-plugin";
-import path from "path";
-import webpack, { web } from "webpack";
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import path from 'path';
+import webpack, { web } from 'webpack';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 
@@ -21,5 +21,5 @@ export function buildPlugins({paths, isDev}: BuildOptions): webpack.WebpackPlugi
         
         //isDev && new ReactRefreshWebpackPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-    ]
+    ];
 }

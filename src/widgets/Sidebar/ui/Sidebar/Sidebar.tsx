@@ -13,7 +13,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
 
     const onToggle = () => {
         setCollapsed(prev => !prev);
-    }
+    };
 
     return (
         <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [])}>

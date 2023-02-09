@@ -7,14 +7,14 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
     const svgLoader = {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
-    }
+    };
 
     const cssLoaders = {
         test: /\.s[ac]ss$/i,
         use: [
             isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
             {
-                loader: "css-loader",
+                loader: 'css-loader',
                 options: {
                     modules: {
                         auto: (resPath: string) => resPath.includes('.module.'),
@@ -24,7 +24,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
                     }
                 }
             },
-            "sass-loader",
+            'sass-loader',
         ],
     };
 
@@ -91,5 +91,5 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
         babelLoader,
         typescriptLoader,
         cssLoaders,
-    ]
+    ];
 }
