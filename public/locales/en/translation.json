@@ -2,7 +2,11 @@
   "about": "about",
   "lang": "russian",
   "main": "main",
+  "page not found": "page not found",
   "random": "random",
+  "refresh page": "reload page",
   "test": "test",
-  "translate": "translate"
+  "throw error": "throw error",
+  "translate": "translate",
+  "unexpected error": "unexpected error"
 }

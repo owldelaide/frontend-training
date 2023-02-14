@@ -2,7 +2,11 @@
   "about": "о сайте",
   "lang": "английский",
   "main": "главная",
+  "page not found": "страница не найдена",
   "random": "рандом",
+  "refresh page": "обновить страницу",
   "test": "тест",
-  "translate": "перевод"
+  "throw error": "вызвать ошибку",
+  "translate": "перевод",
+  "unexpected error": "непредвиденная ошибка"
 }
