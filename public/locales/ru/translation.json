@@ -8,5 +8,6 @@
   "test": "тест",
   "throw error": "вызвать ошибку",
   "translate": "перевод",
-  "unexpected error": "непредвиденная ошибка"
+  "unexpected error": "непредвиденная ошибка",
+  "toggle": "переключить"
 }

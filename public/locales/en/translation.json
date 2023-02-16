@@ -8,5 +8,6 @@
   "test": "test",
   "throw error": "throw error",
   "translate": "translate",
-  "unexpected error": "unexpected error"
+  "unexpected error": "unexpected error",
+  "toggle": "toggle"
 }
