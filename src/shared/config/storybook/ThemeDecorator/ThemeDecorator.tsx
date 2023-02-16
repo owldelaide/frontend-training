@@ -1,4 +1,4 @@
-import 'app/styles/index.scss';
+/* eslint-disable react/display-name */
 import { Story } from '@storybook/react';
 import { Theme } from 'app/providers/ThemeProvider';
 
