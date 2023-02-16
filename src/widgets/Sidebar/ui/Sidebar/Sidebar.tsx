@@ -10,6 +10,7 @@ interface SidebarProps {
     className?: string,
 }
 
+// eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
 export const Sidebar = ({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
     const {t} = useTranslation();
