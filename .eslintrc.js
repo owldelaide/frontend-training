@@ -11,6 +11,12 @@ module.exports = {
 		'plugin:i18next/recommended'
 	],
 	'overrides': [
+		{
+			files: ['**/src/**/*.test.{ts,tsx}'],
+			rules: {
+				'i18next/no-literal-string': 'off'
+			}
+		}
 	],
 	'parser': '@typescript-eslint/parser',
 	'parserOptions': {
@@ -28,6 +34,6 @@ module.exports = {
 		'@typescript-eslint/ban-ts-comment': 'warn',
 		'quotes': ['error', 'single'],
 		'semi': ['error', 'always'],
-		'i18next/no-literal-string': ['error', {markupOnly: true}]
-	}
+		'i18next/no-literal-string': ['error', { markupOnly: true, 'ignoreAttribute': ['data-testid'] }]
+	},
 };
