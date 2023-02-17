@@ -1,13 +1,16 @@
 {
   "about": "about",
-  "lang": "russian",
+  "lang": "english",
   "main": "main",
   "page not found": "page not found",
   "random": "random",
   "refresh page": "reload page",
   "test": "test",
   "throw error": "throw error",
+  "toggle": "toggle",
   "translate": "translate",
   "unexpected error": "unexpected error",
-  "toggle": "toggle"
+  "Главная": "",
+  "О сайте": "",
+  "short_lang": "en"
 }
