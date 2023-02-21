@@ -1,5 +1,7 @@
 {
   "about": "about",
+  "decrement": "decrement",
+  "increment": "increment",
   "lang": "english",
   "login": "log in",
   "main": "main",
