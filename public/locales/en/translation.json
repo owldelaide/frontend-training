@@ -1,6 +1,8 @@
 {
   "about": "about",
   "decrement": "decrement",
+  "enter password": "enter password",
+  "enter username": "enter username",
   "increment": "increment",
   "lang": "english",
   "login": "log in",

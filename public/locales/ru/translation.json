@@ -1,6 +1,8 @@
 {
   "about": "о сайте",
   "decrement": "уменьшить",
+  "enter password": "введите пароль",
+  "enter username": "введите юзернейм",
   "increment": "увеличить",
   "lang": "русский",
   "login": "войти",
