@@ -31,6 +31,7 @@ module.exports = {
 	],
 	'rules': {
 		'react/jsx-indent': [2, 4],
+		'react/display-name': 0,
 		'no-unused-vars': 'warn',
 		'@typescript-eslint/ban-ts-comment': 'warn',
 		'quotes': ['error', 'single'],
