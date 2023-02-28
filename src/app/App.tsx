@@ -1,4 +1,3 @@
-import './styles/index.scss';
 import { Suspense, useEffect } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
@@ -8,13 +7,13 @@ import { Sidebar } from 'widgets/Sidebar';
 import { useDispatch } from 'react-redux';
 import { userActions } from 'entities/User';
 
-const App = () => {
+function App() {
     const { theme } = useTheme();
-    const disatch = useDispatch();
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        disatch(userActions.initAuthData());
-    }, [disatch]);
+        dispatch(userActions.initAuthData());
+    }, [dispatch]);
 
     return (
         <div className={classNames('app', {}, [theme])}>
@@ -27,6 +26,6 @@ const App = () => {
             </Suspense>
         </div>
     );
-};
+}
 
 export default App;
