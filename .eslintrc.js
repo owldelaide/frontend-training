@@ -10,6 +10,10 @@ module.exports = {
 		'plugin:react/jsx-runtime',
 		'plugin:i18next/recommended'
 	],
+	'globals': {
+		__IS_DEV__: true,
+		__API__: true,
+	},
 	'overrides': [
 		{
 			files: ['**/src/**/*.test.{ts,tsx}'],
