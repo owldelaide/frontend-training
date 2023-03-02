@@ -31,6 +31,13 @@
         }
     ],
     "profile": {
-        "name": "typicode"
+        "firstName": "Leanne",
+        "lastName": "Graham",
+        "username": "bret",
+        "age": 25,
+        "currency": "GBP",
+        "country": "United Kingdom",
+        "city": "Gwenborough",
+        "avatar": "https://png.pngtree.com/png-vector/20190728/ourlarge/pngtree-avatar-user-profile-flat-color-icon-vector-icon-banner-png-image_1619399.jpg"
     }
 }
