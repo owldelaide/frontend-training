@@ -40,6 +40,7 @@ module.exports = {
 		'@typescript-eslint/ban-ts-comment': 'warn',
 		'quotes': ['error', 'single'],
 		'semi': ['error', 'always'],
+		'no-undef': 'off',
 		'i18next/no-literal-string': [
 			'error',
 			{
