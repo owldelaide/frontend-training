@@ -1,43 +1,43 @@
 {
-    "posts": [
-        {
-            "id": "1",
-            "title": "json-server",
-            "author": "typicode"
-        },
-        {
-            "id": "2",
-            "title": "json-server2",
-            "author": "typicode"
-        },
-        {
-            "id": "3",
-            "title": "json-server3",
-            "author": "typicode"
-        }
-    ],
-    "comments": [
-        {
-            "id": "1",
-            "body": "some comment",
-            "postId": "1"
-        }
-    ],
-    "users": [
-        {
-            "id": "1",
-            "username": "test",
-            "password": "test"
-        }
-    ],
-    "profile": {
-        "firstName": "Leanne",
-        "lastName": "Graham",
-        "username": "bret",
-        "age": 25,
-        "currency": "GBP",
-        "country": "United Kingdom",
-        "city": "Gwenborough",
-        "avatar": "https://png.pngtree.com/png-vector/20190728/ourlarge/pngtree-avatar-user-profile-flat-color-icon-vector-icon-banner-png-image_1619399.jpg"
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": "2",
+      "title": "json-server2",
+      "author": "typicode"
+    },
+    {
+      "id": "3",
+      "title": "json-server3",
+      "author": "typicode"
     }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": "1"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "test",
+      "password": "test"
+    }
+  ],
+  "profile": {
+    "firstName": "Lianna",
+    "lastName": "Graham",
+    "username": "bret",
+    "age": 25,
+    "currency": "USD",
+    "country": "United States",
+    "city": "Gwenborough",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/3607/3607444.png"
+  }
 }

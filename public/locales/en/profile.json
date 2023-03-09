@@ -1,6 +1,16 @@
 {
-  "profile": "profile",
   "edit": "edit",
   "firstname": "first name",
-  "lastname": "last name"
+  "lastname": "last name",
+  "loadingError": "an error occurred while loading",
+  "profile": "profile",
+  "refreshPage": "try to refresh page",
+  "cancel": "cancel",
+  "save": "save",
+  "age": "age",
+  "city": "city",
+  "username": "username",
+  "avatar": "avatar",
+  "currency": "currency",
+  "country": "country"
 }

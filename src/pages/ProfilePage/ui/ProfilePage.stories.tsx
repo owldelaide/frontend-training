@@ -10,12 +10,9 @@ export default {
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-    args: {
-        to: '/'
-    }
 } as ComponentMeta<typeof ProfilePage>;
 
-const Template: ComponentStory<typeof ProfilePage> = (args) => <ProfilePage {...args as object} />;
+const Template: ComponentStory<typeof ProfilePage> = (args) => <ProfilePage {...args } />;
 
 export const Normal = Template.bind({});
 Normal.args = {};
