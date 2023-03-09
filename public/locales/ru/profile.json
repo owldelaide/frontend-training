@@ -12,5 +12,10 @@
   "username": "юзернейм",
   "avatar": "аватар",
   "currency": "валюта",
-  "country": "страна"
+  "country": "страна",
+  "server error": "ошибка сервера",
+  "incorrect age": "некорректный возраст",
+  "required name": "имя и фамилия пользователя обязательны",
+  "required country": "страна обязательна",
+  "no data": "данных нет"
 }

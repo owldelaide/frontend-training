@@ -32,6 +32,8 @@ export default {
     '\\.svg': path.resolve(__dirname, 'jestEmptyComponent')
   },
   globals: {
-    '__IS_DEV__': true,
+    __IS_DEV__: true,
+    __API__: '',
+    __PROJECT__: 'jest',
   }
 };

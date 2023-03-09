@@ -12,5 +12,10 @@
   "username": "username",
   "avatar": "avatar",
   "currency": "currency",
-  "country": "country"
+  "country": "country",
+  "server error": "server error",
+  "incorrect age": "incorrect age",
+  "required name": "firstname and lastname are required",
+  "required country": "country is required",
+  "no data": "no data"
 }

@@ -7,10 +7,15 @@
   "currency": "",
   "edit": "",
   "firstname": "",
+  "incorrect age": "",
   "lastname": "",
   "loadingError": "",
+  "no data": "",
   "profile": "",
   "refreshPage": "",
+  "required country": "",
+  "required name": "",
   "save": "",
+  "server error": "",
   "username": ""
 }
