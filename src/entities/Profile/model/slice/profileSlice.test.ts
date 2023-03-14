@@ -1,7 +1,7 @@
 import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
 import { ProfileSchema, updateProfileData, ValidateProfileError } from 'entities/Profile';
-import { profileActions, profileReducer } from './profileSlice';
+import { profileActions, profileReducer } from './ProfileSlice';
 
 const data = {
     firstName: 'fN',
