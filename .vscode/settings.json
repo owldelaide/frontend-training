@@ -4,6 +4,7 @@
         "src/shared/config/i18n"
     ],
     "i18n-ally.keystyle": "nested",
+    "i18n-ally.namespace": true,
     "css.validate": false,
     "less.validate": false,
     "scss.validate": false,
