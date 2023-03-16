@@ -17,7 +17,7 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
     if(!id) {
         return (
             <div className={classNames('', {}, [className])}>
-                {t('article.article_not_found')}
+                {t('article_not_found')}
             </div>
         );
     }
