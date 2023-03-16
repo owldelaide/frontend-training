@@ -22,7 +22,6 @@ Primary.args = {
         country: Country.Russia,
         age: 27,
         username: 'uN',
-        city: 'ct',
         currency: Currency.RUB,
         avatar
     }
