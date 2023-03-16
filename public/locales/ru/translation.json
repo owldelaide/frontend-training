@@ -1,6 +1,11 @@
 {
   "about": "о сайте",
   "age": "",
+  "article": {
+    "article_not_found": "",
+    "loading_error": ""
+  },
+  "article_not_found": "",
   "auth error": "неверный логин или пароль",
   "auth form": "форма авторизации",
   "avatar": "",
@@ -18,6 +23,7 @@
   "lang": "русский",
   "lastname": "",
   "loadingError": "",
+  "loading_error": "",
   "login": "войти",
   "logout": "выйти",
   "main": "главная",

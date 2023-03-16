@@ -1,8 +1,12 @@
 :root {
     --bg-color: #e1e1ef;
     --inverted-bg-color: #0e0e75;
-    --primary-color: rgb(106 106 154);
-    --secondary-color: rgb(190 187 211);
-    --inverted-primary-color: rgb(27 172 27);
-    --inverted-secondary-color: rgb(14 234 14);
+    --primary-color: #6a6a9a;
+    --secondary-color: #bebbd3;
+    --inverted-primary-color: #1bac1b;
+    --inverted-secondary-color: #0eea0e;
+
+    // skeleton
+    --skeleton-color: #fff;
+    --skeleton-shadow: #474274;
 }
