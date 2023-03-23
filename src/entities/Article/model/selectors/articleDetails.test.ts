@@ -5,6 +5,7 @@ import { getArticleDetailsData, getArticleDetailsError, getArticleDetailsIsLoadi
 const article: Article = {
     'id': '1',
     'title': 'Javascript news',
+    'user': { id: '1', username: 'uN', avatar: 'https://cdn-icons-png.flaticon.com/512/3607/3607444.png'},
     'subtitle': 'Что нового в JS за 2022 год?',
     'img': 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
     'views': 1022,

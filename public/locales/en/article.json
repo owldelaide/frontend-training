@@ -3,5 +3,7 @@
   "comments": "comments",
   "loading_error": "an error occurred while loading",
   "send": "send",
-  "type_comment": "type comment"
+  "type_comment": "type comment",
+  "e": "read more",
+  "list": "back to list"
 }

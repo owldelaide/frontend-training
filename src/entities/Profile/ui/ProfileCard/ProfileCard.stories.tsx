@@ -21,6 +21,7 @@ Primary.args = {
         lastName: 'lN',
         country: Country.Russia,
         age: 27,
+        city: 'city',
         username: 'uN',
         currency: Currency.RUB,
         avatar
