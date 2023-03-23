@@ -1,8 +1,9 @@
 import { memo, useState } from 'react';
+import { useSelector } from 'react-redux';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
-import { SidebarItemsList } from 'widgets/Sidebar/model/items';
+import { getSidebarItems } from '../../model/selectors/getSidebarItems';
 import { Button, ButtonSize, ButtonTheme } from '../../../../shared/ui/Button/Button';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 import cls from './Sidebar.module.scss';
@@ -14,11 +15,11 @@ interface SidebarProps {
 // eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
 export const Sidebar = memo(({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
-
+    const sidebarItemsList = useSelector(getSidebarItems);
     const onToggle = () => {
         setCollapsed(prev => !prev);
     };
-    
+
     return (
         <div
             data-testid='sidebar'
@@ -35,7 +36,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
                 {collapsed ? '>' : '<'}
             </Button>
             <div className={cls.items}>
-                {SidebarItemsList.map((item) => (
+                {sidebarItemsList.map((item) => (
                     <SidebarItem
                         item={item}
                         collapsed={collapsed}
