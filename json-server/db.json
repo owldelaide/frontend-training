@@ -24,7 +24,9 @@
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -105,6 +107,24 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "some comment 4",
+      "id": "zqoPOmY"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "some comment 5",
+      "id": "d3Ogetu"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "some comment 6",
+      "id": "z0NCntE"
     }
   ],
   "users": [
@@ -120,17 +140,31 @@
       "username": "admin",
       "password": "admin",
       "role": "ADMIN",
-      "avatar": "https://cdn-icons-png.flaticon.com/512/3607/3607444.png"
+      "avatar": "https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-hipster-vector-stock-91462914.jpg"
     }
   ],
-  "profile": {
-    "firstName": "Lianna",
-    "lastName": "Graham",
-    "username": "bret",
-    "age": 22,
-    "currency": "USD",
-    "country": "United States",
-    "city": "Gwenborough",
-    "avatar": "https://cdn-icons-png.flaticon.com/512/3607/3607444.png"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "firstName": "Lianna",
+      "lastName": "Graham",
+      "username": "bret",
+      "age": 22,
+      "currency": "USD",
+      "country": "United States",
+      "city": "Gwenborough",
+      "avatar": "https://cdn-icons-png.flaticon.com/512/3607/3607444.png"
+    },
+    {
+      "id": "2",
+      "firstName": "Graham",
+      "lastName": "Norton",
+      "username": "gr",
+      "age": 50,
+      "currency": "USD",
+      "country": "United Kingdom",
+      "city": "Gwenborough",
+      "avatar": "https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-hipster-vector-stock-91462914.jpg"
+    }
+  ]
 }
