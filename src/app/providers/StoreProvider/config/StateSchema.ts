@@ -1,3 +1,4 @@
+import { ArticlesPageSchema } from 'pages/ArticlesPage';
 import { To } from 'history';
 import { NavigateOptions } from 'react-router';
 import { AnyAction, CombinedState, EnhancedStore, Reducer, ReducersMapObject } from '@reduxjs/toolkit';
@@ -20,6 +21,7 @@ export interface StateSchema {
     articleDetails?: ArticleDetailsSchema;
     articleDetailsComments?: ArticleDetailsCommentsSchema;
     addCommentForm?: AddCommentFormSchema;
+    articlesPage?: ArticlesPageSchema;
 
 }
 

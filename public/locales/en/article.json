@@ -1,9 +1,9 @@
 {
   "article_not_found": "article not found",
   "comments": "comments",
+  "e": "read more",
+  "list": "back to list",
   "loading_error": "an error occurred while loading",
   "send": "send",
-  "type_comment": "type comment",
-  "e": "read more",
-  "list": "back to list"
+  "type_comment": "type comment"
 }
