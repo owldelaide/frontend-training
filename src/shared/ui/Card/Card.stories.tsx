@@ -10,9 +10,12 @@ export default {
    },
 } as ComponentMeta<typeof Card>;
 
-const Template: ComponentStory<typeof Card> = (args) => <Card { ...args } />;
+const text = 'text';
+const title = 'title';
+
+const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {
-   children: <Text text={'test'} title={'title'} />
+   children: <Text text={text} title={title} />
 };
