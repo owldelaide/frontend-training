@@ -6,12 +6,14 @@ import { ProfileSchema } from 'entities/Profile';
 import { UserSchema } from 'entities/User';
 import { AddCommentFormSchema } from 'features/AddCommentForm/model/types/AddCommentForm';
 import { LoginSchema } from 'features/AuthByUsername';
+import { ScrollRestorationSchema } from 'features/ScrollRestoration';
 import { ArticleDetailsCommentsSchema } from 'pages/ArticleDetailsPage';
 import { ArticlesPageSchema } from 'pages/ArticlesPage';
 
 export interface StateSchema {
     counter: CounterSchema;
     user: UserSchema;
+    scrollRestoration: ScrollRestorationSchema;
 
     // async
     loginForm?: LoginSchema;
