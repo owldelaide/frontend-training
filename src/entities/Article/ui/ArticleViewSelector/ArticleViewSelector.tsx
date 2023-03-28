@@ -11,7 +11,7 @@ import { Icon } from 'shared/ui/Icon/Icon';
 interface ArticleViewSelectorProps {
     className?: string;
     view: ArticleView,
-    onViewClick: (view: ArticleView) => void;
+    onViewClick?: (view: ArticleView) => void;
 }
 
 const viewTypes = [
