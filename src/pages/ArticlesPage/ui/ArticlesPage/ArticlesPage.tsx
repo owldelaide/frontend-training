@@ -8,9 +8,9 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { Page } from 'shared/ui/Page/Page';
 import cls from './ArticlesPage.module.scss';
-import { getArticlesPageError, getArticlesPageHasMore, getArticlesPageIsLoading, getArticlesPageNum, getArticlesPageView } from './model/selectors/articlesPageSelectors';
-import { fetchArticlesList } from './model/services/fetchArticlesList/fetchArticlesList';
+import { getArticlesPageError, getArticlesPageIsLoading, getArticlesPageNum, getArticlesPageView } from './model/selectors/articlesPageSelectors';
 import { fetchNextArticlesPage } from './model/services/fetchNextArticlesPage/fetchNextArticlesPage';
+import { initArticlesPage } from './model/services/initArticlesPage/initArticlesPage';
 import { articlesPageActions, articlesPageReducer, getArticles } from './model/slices/articlesPageSlice';
 
 interface ArticlesPageProps {
@@ -103,7 +103,7 @@ const ArticlesPage = (props: ArticlesPageProps) => {
     const error = useSelector(getArticlesPageError);
     const view = useSelector(getArticlesPageView);
     const page = useSelector(getArticlesPageNum);
-    const hasMore = useSelector(getArticlesPageHasMore);
+
     
     const onChangeView = useCallback((view: ArticleView) => {
         dispatch(articlesPageActions.setView(view));
@@ -114,14 +114,11 @@ const ArticlesPage = (props: ArticlesPageProps) => {
     }, [dispatch]);
 
     useInitialEffect(() => {
-      dispatch(articlesPageActions.initState());
-      dispatch(fetchArticlesList({
-          page: 1
-      }));
+      dispatch(initArticlesPage());
     });
 
     return (
-        <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
+        <DynamicModuleLoader reducers={reducers} removeAfterUnmount={false}>
             <Page onScrollEnd={onLoadNextPart} className={classNames(cls.ArticlesPage, {}, [className])}>
                 <ArticleViewSelector view={view} onViewClick={onChangeView}/>
                 <ArticleList
