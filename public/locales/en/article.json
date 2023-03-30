@@ -1,9 +1,11 @@
 {
+  "": "all",
   "article_not_found": "article not found",
   "comments": "comments",
   "e": "read more",
   "list": "back to list",
   "loading_error": "an error occurred while loading",
+  "s": "economics",
   "send": "send",
   "type_comment": "type comment"
 }

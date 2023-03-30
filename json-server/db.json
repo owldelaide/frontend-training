@@ -90,7 +90,7 @@
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
       "views": 1022,
-      "createdAt": "26.02.2022",
+      "createdAt": "28.02.2022",
       "userId": "1",
       "type": [
         "IT"
@@ -113,8 +113,8 @@
       "title": "Kotlin news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/2048px-Kotlin_Icon.svg.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 122,
+      "createdAt": "26.03.2022",
       "userId": "1",
       "type": [
         "IT"
@@ -137,8 +137,8 @@
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 102,
+      "createdAt": "26.01.2022",
       "userId": "1",
       "type": [
         "IT"
@@ -161,8 +161,8 @@
       "title": "Kotlin news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/2048px-Kotlin_Icon.svg.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 220,
+      "createdAt": "30.01.2022",
       "userId": "1",
       "type": [
         "IT"
@@ -185,7 +185,7 @@
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
-      "views": 1022,
+      "views": 2002,
       "createdAt": "26.02.2022",
       "userId": "1",
       "type": [
@@ -207,7 +207,7 @@
     {
       "id": "7",
       "title": "Kotlin news",
-      "subtitle": "Что нового в JS за 2022 год?",
+      "subtitle": "Что в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/2048px-Kotlin_Icon.svg.png",
       "views": 1022,
       "createdAt": "26.02.2022",
@@ -254,7 +254,7 @@
     },
     {
       "id": "9",
-      "title": "Kotlin news",
+      "title": "Kotlin",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/2048px-Kotlin_Icon.svg.png",
       "views": 1022,
@@ -278,7 +278,7 @@
     },
     {
       "id": "10",
-      "title": "Python news",
+      "title": "Python",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
       "views": 1022,
@@ -302,7 +302,7 @@
     },
     {
       "id": "11",
-      "title": "Kotlin news",
+      "title": "Kotlin1",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/2048px-Kotlin_Icon.svg.png",
       "views": 1022,
@@ -374,7 +374,7 @@
     },
     {
       "id": "14",
-      "title": "Python news",
+      "title": "Python1",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
       "views": 1022,

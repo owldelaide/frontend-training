@@ -1,13 +1,26 @@
 {
+  "all": "",
   "article": {
     "article_not_found": "",
     "loading_error": ""
   },
   "article_not_found": "",
+  "asc": "",
   "back_to_list": "",
   "comments": "",
+  "created": "",
+  "desc": "",
+  "economics": "",
+  "it": "",
   "loading_error": "",
+  "not_found": "",
+  "order": "",
   "read_more": "",
+  "science": "",
+  "search": "",
   "send": "",
-  "type_comment": ""
+  "sort_by": "",
+  "title": "",
+  "type_comment": "",
+  "views": ""
 }

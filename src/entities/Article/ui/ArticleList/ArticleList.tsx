@@ -5,6 +5,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './ArticleList.module.scss';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkeleton';
+import { Text, TextSize } from 'shared/ui/Text/Text';
 
 interface ArticleListProps {
     className?: string;
@@ -20,7 +21,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
         isLoading,
         view = ArticleView.SMALL
     } = props;
-    const { t } = useTranslation();
+    const { t } = useTranslation('article');
 
     const renderArticle = (article: Article) => {
         return (
@@ -32,6 +33,17 @@ export const ArticleList = memo((props: ArticleListProps) => {
             />
         );
     };
+
+    if(!isLoading && !articles.length) {
+        return (
+            <div className={classNames('', {}, [className, cls[view]])}>
+                <Text 
+                    title={t('not_found')}
+                    size={TextSize.L}
+                />
+            </div>          
+        );
+    }
 
     return (
         <div className={classNames('', {}, [className, cls[view]])}>
