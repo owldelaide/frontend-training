@@ -10,18 +10,18 @@ export function buildBabelLoader (options: BuildOptions) {
             loader: 'babel-loader',
             options: {
                 presets: ['@babel/preset-env'],
-                plugins: [
+                /*plugins: [
                     [
                         'i18next-extract',
                         {
                             locales: ['en', 'ru'],
                             keyAsDefaultValue: false,
-                            saveMissing: true,
+                            //saveMissing: true,
                             outputPath: 'public/locales/{{locale}}/{{ns}}.json', //t("key", {ns: "locale-file"})
                         },
                     ],
                     isDev && require.resolve('react-refresh/babel'),
-                ].filter(Boolean),
+                ].filter(Boolean),*/
             },
         },
     };

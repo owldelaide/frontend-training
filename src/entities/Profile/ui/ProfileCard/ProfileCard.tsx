@@ -58,8 +58,8 @@ export const ProfileCard = (props: ProfileCardProps) => {
             <div className={classNames(cls.ProfileCard, {}, [className, cls.error])}>
                 <Text
                     theme={TextTheme.ERROR}
-                    title={t('loadingError')}
-                    text={t('refreshPage')}
+                    title={t('loading_error')}
+                    text={t('refresh_page')}
                     align={TextAlign.CENTER}
                 />
             </div>

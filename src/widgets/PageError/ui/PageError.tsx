@@ -16,9 +16,9 @@ export const PageError = ({ className }: PageErrorProps) => {
 
     return (
         <div className={classNames(cls.PageError, {}, [])}>
-            <p>{t('unexpected error')}</p>
+            <p>{t('unexpected_error')}</p>
             <Button onClick={reloadPage}>
-                {t('refresh page')}
+                {t('refresh_page')}
             </Button>
         </div>
     );

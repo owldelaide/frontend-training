@@ -32,11 +32,11 @@ const ProfilePage = ({ className }: ProfilePageProps) => {
     const { id } = useParams<{ id: string }>();
 
     const validateErrorTranslates = {
-        [ValidateProfileError.SERVER_ERROR]: t('server error'),
-        [ValidateProfileError.INCORRECT_COUNTRY]: t('required country'),
-        [ValidateProfileError.INCORRECT_AGE]: t('incorrect age'),
-        [ValidateProfileError.INCORRECT_USER_DATA]: t('required name'),
-        [ValidateProfileError.NO_DATA]: t('no data'),
+        [ValidateProfileError.SERVER_ERROR]: t('error_server'),
+        [ValidateProfileError.INCORRECT_COUNTRY]: t('required_country'),
+        [ValidateProfileError.INCORRECT_AGE]: t('error_incorrect_age'),
+        [ValidateProfileError.INCORRECT_USER_DATA]: t('error_required_name'),
+        [ValidateProfileError.NO_DATA]: t('no_data'),
     };
 
     useInitialEffect(() => {
