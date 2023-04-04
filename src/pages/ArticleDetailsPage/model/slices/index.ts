@@ -1,4 +1,4 @@
-import { articleDetailsCommentsReducer } from 'pages/ArticleDetailsPage/model/slices/ArticleDetailsCommentsSlice';
+import { articleDetailsCommentsReducer } from '../../model/slices/ArticleDetailsCommentsSlice';
 import { ArticleDetailsPageSchema } from '../types';
 import { combineReducers } from '@reduxjs/toolkit';
 import { articleDetailsPageRecommendationsSliceReducer } from './ArticleDetailsPageRecommendationsSlice';

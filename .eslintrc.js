@@ -33,6 +33,7 @@ module.exports = {
 		'@typescript-eslint',
 		'i18next',
 		'react-hooks',
+		'owldelaide-plugin'
 	],
 	'rules': {
 		'react/jsx-indent': [2, 4],
@@ -51,6 +52,7 @@ module.exports = {
 		],
 		'react-hooks/rules-of-hooks': 'error',
 		'react-hooks/exhaustive-deps': 'error',
-		'react/jsx-key': 'off'
+		'react/jsx-key': 'off',
+		'owldelaide-plugin/path-checker': 'error',
 	},
 };

@@ -2,11 +2,11 @@ import { memo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher';
-import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
 import { getSidebarItems } from '../../model/selectors/getSidebarItems';
 import { Button, ButtonSize, ButtonTheme } from '../../../../shared/ui/Button/Button';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 import cls from './Sidebar.module.scss';
+import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 
 interface SidebarProps {
     className?: string,

@@ -1,5 +1,5 @@
 import { getArticleDetailsData } from 'entities/Article';
-import { getCanEditArticle } from 'pages/ArticleDetailsPage/model/selectors/articles';
+import { getCanEditArticle } from '../../model/selectors/articles';
 import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
