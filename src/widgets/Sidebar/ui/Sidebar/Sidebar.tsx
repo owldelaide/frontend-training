@@ -7,6 +7,7 @@ import { Button, ButtonSize, ButtonTheme } from '../../../../shared/ui/Button/Bu
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 import cls from './Sidebar.module.scss';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
+import { VStack } from 'shared/ui/Stack/VStack/VStack';
 
 interface SidebarProps {
     className?: string,
@@ -35,7 +36,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
             >
                 {collapsed ? '>' : '<'}
             </Button>
-            <div className={cls.items}>
+            <VStack className={cls.items} gap='8'>
                 {sidebarItemsList.map((item) => (
                     <SidebarItem
                         item={item}
@@ -43,7 +44,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
                         key={item.path}
                     />
                 ))}
-            </div>
+            </VStack>
             <div className={cls.switchers}>
                 <ThemeSwitcher />
                 <LangSwitcher

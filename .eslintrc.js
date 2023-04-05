@@ -17,7 +17,7 @@ module.exports = {
 	},
 	'overrides': [
 		{
-			files: ['**/src/**/*.test.{ts,tsx}'],
+			files: ['**/src/**/*.test.{ts,tsx}', '**/src/**/*.stories.{ts,tsx}'],
 			rules: {
 				'i18next/no-literal-string': 'off'
 			}
@@ -47,7 +47,15 @@ module.exports = {
 			'error',
 			{
 				markupOnly: true,
-				'ignoreAttribute': ['data-testid', 'to', 'target']
+				'ignoreAttribute': [
+					'data-testid',
+					'to',
+					'target',
+					'justify',
+					'align',
+					'direction',
+					'gap'
+				]
 			}
 		],
 		'react-hooks/rules-of-hooks': 'error',
