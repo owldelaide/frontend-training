@@ -17,5 +17,7 @@
   "error_incorrect_age": "Некорректный возраст",
   "error_required_name": "Имя и фамилия пользователя обязательны",
   "required_country": "Страна обязательна",
-  "no_data": "Данных нет"
+  "no_data": "Данных нет",
+  "input_currency": "Введите валюту",
+  "input_country": "Введите страну"
 }

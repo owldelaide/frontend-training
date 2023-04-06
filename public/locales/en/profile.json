@@ -17,5 +17,7 @@
   "error_incorrect_age": "Incorrect age",
   "error_required_name": "Firstname and lastname are required",
   "required_country": "Country is required",
-  "no data": "No data"
+  "no data": "No data",
+  "input_currency": "Input currency",
+  "input_country": "Input country"
 }
