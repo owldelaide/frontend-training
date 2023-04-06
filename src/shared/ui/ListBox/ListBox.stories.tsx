@@ -7,6 +7,9 @@ export default {
    argTypes: {
       backgroundColor: { control: 'color' },
    },
+   decorators: [
+      Story => <div style={{padding: '200px'}}><Story/></div>
+   ]
 } as ComponentMeta<typeof ListBox>;
 
 const people: ListBoxItem[] = [
@@ -21,6 +24,38 @@ const Template: ComponentStory<typeof ListBox> = (args) => <ListBox {...args}/>;
 
 export const Normal = Template.bind({});
 Normal.args = {
+   items: people,
+   value: undefined,
+   defaultValue: 'выберите'
+};
+
+export const TopLeft = Template.bind({});
+TopLeft.args = {
+   direction: 'top left',
+   items: people,
+   value: undefined,
+   defaultValue: 'выберите'
+};
+
+export const TopRight = Template.bind({});
+TopRight.args = {
+   direction: 'top right',
+   items: people,
+   value: undefined,
+   defaultValue: 'выберите'
+};
+
+export const BottomLeft = Template.bind({});
+BottomLeft.args = {
+   direction: 'bottom left',
+   items: people,
+   value: undefined,
+   defaultValue: 'выберите'
+};
+
+export const BottomRight = Template.bind({});
+BottomRight.args = {
+   direction: 'bottom right',
    items: people,
    value: undefined,
    defaultValue: 'выберите'
