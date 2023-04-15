@@ -4,3 +4,4 @@ node_modules
 .loki/report.json
 .loki/report.html
 .fttemplates
+/reports
