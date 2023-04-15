@@ -1,8 +1,9 @@
 import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
 import { updateProfileData } from '../services/updateProfileData/updateProfileData';
-import { EditableProfileCardSchema, ValidateProfileError } from '../types/EditableProfileCardSchema';
+import { ValidateProfileError } from '../consts/consts';
 import { profileActions, profileReducer } from './ProfileSlice';
+import { EditableProfileCardSchema } from '../types/EditableProfileCardSchema';
 
 const data = {
     firstName: 'fN',

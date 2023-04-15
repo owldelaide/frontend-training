@@ -6,9 +6,13 @@ export {
     userActions,
 } from './model/slice/UserSlice';
 
-export { 
+export type { 
     UserSchema, 
     User 
 } from './model/types/user';
+
+export { 
+    UserRole
+} from './model/consts/consts';
 
 export {isUserAdmin, isUserManager, getUserRoles} from './model/selectors/roleSelectors';
