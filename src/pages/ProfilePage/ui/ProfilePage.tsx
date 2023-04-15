@@ -11,12 +11,7 @@ interface ProfilePageProps {
 }
 
 const ProfilePage = ({ className }: ProfilePageProps) => {
-    const { t } = useTranslation('profile');
     const { id } = useParams<{ id: string }>();
-
-    if(!id) {
-        return <Text text={t('loading_error')} />;
-    }
 
     return (
         <Page className={classNames('', {}, [className])}>
