@@ -19,5 +19,7 @@
   "main": "Main",
   "about": "About",
   "profile": "Profile",
-  "articles": "Articles"
+  "articles": "Articles",
+  "admin": "Admin",
+  "forbidden": "Forbidden"
 }

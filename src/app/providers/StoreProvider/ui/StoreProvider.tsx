@@ -9,7 +9,7 @@ import { ReducersList } from 'shared/lib/components/DynamicModalLoader/DynamicMo
 interface StoreProviderProps {
     children?: ReactNode;
     initialState?: DeepPartial<StateSchema>;
-    asyncReducers?: ReducersList;
+    asyncReducers?: DeepPartial<ReducersMapObject<StateSchema>>;
 
 }
 
