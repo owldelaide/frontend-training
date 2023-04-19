@@ -1,8 +1,8 @@
-import { Country } from 'entities/Country';
-import { Currency } from 'entities/Currency';
-import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
+import { Country } from '@/entities/Country';
+import { Currency } from '@/entities/Currency';
+import { TestAsyncThunk } from '@/shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
 import { updateProfileData } from './updateProfileData';
-import { ValidateProfileError } from 'features/EditableProfileCard/model/consts/consts';
+import { ValidateProfileError } from '@/features/EditableProfileCard/model/consts/consts';
 
 const data = {
     firstName: 'fN',
