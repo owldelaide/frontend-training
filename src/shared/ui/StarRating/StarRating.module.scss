@@ -1,0 +1,16 @@
+.starIcon {
+    fill: none;
+    cursor: pointer;
+}
+
+.hovered {
+    fill: var(--primary-color);
+}
+
+.normal {
+    fill: none;
+}
+
+.isSelected {
+    cursor: auto;
+}

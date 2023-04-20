@@ -21,5 +21,8 @@
   "profile": "Profile",
   "articles": "Articles",
   "admin": "Admin",
-  "forbidden": "Forbidden"
+  "forbidden": "Forbidden",
+  "your_feedback": "Your feedback",
+  "close": "Close",
+  "send": "Send"
 }
