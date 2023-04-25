@@ -65,6 +65,12 @@ module.exports = {
 		'react-hooks/exhaustive-deps': 'error',
 		'react/jsx-key': 'off',
 		'owldelaide-plugin/path-checker': ['error', { alias: '@' }],
-		'owldelaide-plugin/public-api-imports': ['error', { alias: '@' }],
+		'owldelaide-plugin/public-api-imports': [
+			'error',
+			{
+				alias: '@',
+				testFilesPatterns: ['**/*.test.*', '**/*.stories.*', '**/StoreDecorator.tsx']
+			}
+		],
 	},
 };
