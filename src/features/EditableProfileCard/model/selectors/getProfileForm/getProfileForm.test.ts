@@ -1,9 +1,9 @@
+import { StateSchema } from '@/app/providers/StoreProvider';
 import { getProfileForm } from './getProfileForm';
-import { StateSchema } from '@/app/providers/StoreProvider/config/StateSchema';
 import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
 
-describe ('getProfileForm.test', () => {
+describe('getProfileForm.test', () => {
     test('should return correct data', () => {
         const data = {
             firstName: 'fN',

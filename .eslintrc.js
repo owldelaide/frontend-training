@@ -72,5 +72,12 @@ module.exports = {
 				testFilesPatterns: ['**/*.test.*', '**/*.stories.*', '**/StoreDecorator.tsx']
 			}
 		],
+		'owldelaide-plugin/layer-imports': [
+			'error',
+			{
+				alias: '@',
+				ignoreImportPatterns: ['**/StoreProvider', '**/testing', '**/*.test.*']
+			}
+		],
 	},
 };

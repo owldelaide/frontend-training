@@ -2,7 +2,7 @@ import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Dropdown } from '@/shared/ui/Popups';
-import { RoutePath } from '@/shared/config/routeConfig/routeConfig';
+import { RoutePath } from '@/shared/const/router';
 import { Avatar } from '@/shared/ui/Avatar/Avatar';
 import { useDispatch, useSelector } from 'react-redux';
 import { getUserAuthData, isUserAdmin, isUserManager, userActions } from '@/entities/User';
@@ -26,7 +26,7 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
         dispatch(userActions.logout());
     }, [dispatch]);
 
-    if(!authData) {
+    if (!authData) {
         return null;
     }
 

@@ -1,7 +1,7 @@
 import { getLoginUsername } from './getLoginUsername';
-import { StateSchema } from '@/app/providers/StoreProvider/config/StateSchema';
+import { StateSchema } from '@/app/providers/StoreProvider';
 
-describe ('getLoginUsername.test', () => {
+describe('getLoginUsername.test', () => {
     test('should return value', () => {
         const state: DeepPartial<StateSchema> = {
             loginForm: {

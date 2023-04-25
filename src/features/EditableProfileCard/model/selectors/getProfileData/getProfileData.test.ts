@@ -1,9 +1,9 @@
 import { getProfileData } from './getProfileData';
-import { StateSchema } from '@/app/providers/StoreProvider/config/StateSchema';
+import { StateSchema } from '@/app/providers/StoreProvider';
 import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
 
-describe ('getProfileData.test', () => {
+describe('getProfileData.test', () => {
     test('should return correct data', () => {
         const data = {
             firstName: 'fN',

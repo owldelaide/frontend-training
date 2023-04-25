@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Theme } from '@/app/providers/ThemeProvider';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Code } from './Code';
+import { Theme } from '@/shared/const/theme';
 
 export default {
    title: 'shared/Code',
@@ -11,7 +11,7 @@ export default {
    },
 } as ComponentMeta<typeof Code>;
 
-const Template: ComponentStory<typeof Code> = (args) => <Code { ...args } />;
+const Template: ComponentStory<typeof Code> = (args) => <Code {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {
@@ -44,4 +44,4 @@ Dark.args = {
    
    const Template: ComponentStory<typeof Code> = (args) => <Code { ...args } />;`
 };
-Dark.decorators=[ThemeDecorator(Theme.DARK)];
+Dark.decorators = [ThemeDecorator(Theme.DARK)];

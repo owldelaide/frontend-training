@@ -1,4 +1,4 @@
-import { ThunkConfig } from '@/app/providers/StoreProvider/config/StateSchema';
+import { ThunkConfig } from '@/app/providers/StoreProvider';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { validateProfileData } from '../validateProfileData/validateProfileData';
 import { Profile } from '@/entities/Profile';

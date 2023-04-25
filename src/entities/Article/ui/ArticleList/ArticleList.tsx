@@ -7,7 +7,6 @@ import { Article } from '../../model/types/article';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkeleton';
 import cls from './ArticleList.module.scss';
-import { PAGE_ID } from '@/widgets/Page';
 
 interface ArticleListProps {
     className?: string;

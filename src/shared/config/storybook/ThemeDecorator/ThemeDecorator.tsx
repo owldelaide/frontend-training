@@ -1,6 +1,8 @@
 /* eslint-disable react/display-name */
+/* eslint-disable owldelaide-plugin/layer-imports */
+import { ThemeProvider } from '@/app/providers/ThemeProvider';
+import { Theme } from '@/shared/const/theme';
 import { Story } from '@storybook/react';
-import { Theme, ThemeProvider } from '@/app/providers/ThemeProvider';
 
 export const ThemeDecorator = (theme: Theme) => (StoryComponent: Story) => (
     <ThemeProvider initialTheme={theme}>

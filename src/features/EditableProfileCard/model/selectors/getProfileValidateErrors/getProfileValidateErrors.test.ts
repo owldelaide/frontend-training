@@ -1,8 +1,8 @@
 import { ValidateProfileError } from '../../consts/consts';
 import { getProfileValidateErrors } from './getProfileValidateErrors';
-import { StateSchema } from '@/app/providers/StoreProvider/config/StateSchema';
+import { StateSchema } from '@/app/providers/StoreProvider';
 
-describe ('getProfileValidateErrors.test', () => {
+describe('getProfileValidateErrors.test', () => {
     test('should return true', () => {
         const state: DeepPartial<StateSchema> = {
             profile: {

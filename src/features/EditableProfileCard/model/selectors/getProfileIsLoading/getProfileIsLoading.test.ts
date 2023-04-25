@@ -1,7 +1,7 @@
 import { getProfileIsLoading } from './getProfileIsLoading';
-import { StateSchema } from '@/app/providers/StoreProvider/config/StateSchema';
+import { StateSchema } from '@/app/providers/StoreProvider';
 
-describe ('getProfileIsLoading.test', () => {
+describe('getProfileIsLoading.test', () => {
     test('should return true', () => {
         const state: DeepPartial<StateSchema> = {
             profile: {
