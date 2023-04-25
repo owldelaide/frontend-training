@@ -1,10 +1,9 @@
 import { fetchArticlesList } from '../../model/services/fetchArticlesList/fetchArticlesList';
 import { createEntityAdapter, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { StateSchema } from '@/app/providers/StoreProvider';
-import { Article, ArticleView } from '@/entities/Article';
+import { Article, ArticleSortField, ArticleType, ArticleView } from '@/entities/Article';
 import { ArticlesPageSchema } from '../types/articlesPageSchema';
 import { ARTICLE_VIEW_LOCAL_STORAGE_KEY } from '@/shared/const/localStorage';
-import { ArticleSortField, ArticleType } from '@/entities/Article/model/consts/articleConsts';
 import { SortOrder } from '@/shared/types';
 
 const articlesAdapter = createEntityAdapter<Article>({
@@ -65,7 +64,7 @@ const articlesPageSlice = createSlice({
                 state.error = undefined;
                 state.isLoading = true;
 
-                if(action.meta.arg.replace) {
+                if (action.meta.arg.replace) {
                     articlesAdapter.removeAll(state);
                 }
             })
@@ -73,7 +72,7 @@ const articlesPageSlice = createSlice({
                 state.isLoading = false;
                 state.hasMore = action.payload.length >= state.limit;
 
-                if(action.meta.arg.replace) {
+                if (action.meta.arg.replace) {
                     articlesAdapter.setAll(state, action.payload);
                 } else {
                     articlesAdapter.addMany(state, action.payload);
@@ -86,7 +85,7 @@ const articlesPageSlice = createSlice({
     }
 });
 
-export const { 
+export const {
     reducer: articlesPageReducer,
-    actions: articlesPageActions 
+    actions: articlesPageActions
 } = articlesPageSlice;

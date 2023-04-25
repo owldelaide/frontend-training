@@ -3,7 +3,7 @@ import { AxiosInstance } from 'axios';
 import { ArticleDetailsSchema } from '@/entities/Article';
 import { CounterSchema } from '@/entities/Counter';
 import { UserSchema } from '@/entities/User';
-import { AddCommentFormSchema } from '@/features/AddCommentForm/model/types/AddCommentForm';
+import { AddCommentFormSchema } from '@/features/AddCommentForm';
 import { LoginSchema } from '@/features/AuthByUsername';
 import { EditableProfileCardSchema } from '@/features/EditableProfileCard';
 import { ScrollRestorationSchema } from '@/features/ScrollRestoration';
