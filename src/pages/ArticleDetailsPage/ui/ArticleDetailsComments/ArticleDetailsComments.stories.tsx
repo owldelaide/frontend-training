@@ -3,7 +3,7 @@ import { ArticleDetailsComments } from './ArticleDetailsComments';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 
 export default {
-   title: 'shared/ArticleDetailsComments',
+   title: 'pages/ArticleDetailsPage/ArticleDetailsComments',
    component: ArticleDetailsComments,
    argTypes: {
       backgroundColor: { control: 'color' },
