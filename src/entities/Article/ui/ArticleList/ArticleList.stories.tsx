@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { ArticleView } from '@/entities/Article/model/consts/articleConsts';
+import { ArticleView } from '../../model/consts/articleConsts';
 import { ArticleList } from './ArticleList';
 
 export default {
@@ -10,7 +10,7 @@ export default {
    },
 } as ComponentMeta<typeof ArticleList>;
 
-const Template: ComponentStory<typeof ArticleList> = (args) => <ArticleList { ...args } />;
+const Template: ComponentStory<typeof ArticleList> = (args) => <ArticleList {...args} />;
 
 export const isLoading = Template.bind({});
 isLoading.args = {

@@ -64,6 +64,6 @@ module.exports = {
 		'react-hooks/rules-of-hooks': 'error',
 		'react-hooks/exhaustive-deps': 'error',
 		'react/jsx-key': 'off',
-		'owldelaide-plugin/path-checker': 'error',
+		'owldelaide-plugin/path-checker': ['error', { alias: '@' }],
 	},
 };

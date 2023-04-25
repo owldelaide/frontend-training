@@ -1,4 +1,4 @@
-import { ArticleType } from '@/entities/Article/model/consts/articleConsts';
+import { ArticleType } from '../../model/consts/articleConsts';
 import { memo, useCallback, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
@@ -39,9 +39,9 @@ export const ArticleTypeTabs = memo((props: ArticleTypeTabsProps) => {
     }, [onChangeType]);
 
     return (
-        <Tabs 
+        <Tabs
             className={classNames('', {}, [className])}
-            tabs={typeTabs} 
+            tabs={typeTabs}
             value={value}
             onTabClick={onTabClick}
         />

@@ -1,4 +1,4 @@
-import { ArticleView } from '@/entities/Article/model/consts/articleConsts';
+import { ArticleView } from '../../model/consts/articleConsts';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
@@ -39,13 +39,13 @@ export const ArticleViewSelector = memo((props: ArticleViewSelectorProps) => {
         <div className={classNames(cls.articleViewSelector, {}, [className])}>
             {viewTypes.map((viewType) => (
                 <Button
-                    key={viewType.view} 
-                    theme={ButtonTheme.CLEAR} 
+                    key={viewType.view}
+                    theme={ButtonTheme.CLEAR}
                     onClick={onClick(viewType.view)}
                 >
-                    <Icon 
-                        Svg={viewType.icon} 
-                        className={classNames('', {[cls.notSelected]: viewType.view!==view})}
+                    <Icon
+                        Svg={viewType.icon}
+                        className={classNames('', { [cls.notSelected]: viewType.view !== view })}
                     />
                 </Button>
             ))}

@@ -1,11 +1,8 @@
-import { memo } from 'react';
-import EyeIcon from '@/shared/assets/icons/eye-20-20.svg';
+import { ArticleView } from '../../model/consts/articleConsts';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Card } from '@/shared/ui/Card/Card';
-import { Icon } from '@/shared/ui/Icon/Icon';
 import { Skeleton } from '@/shared/ui/Skeleton/Skeleton/Skeleton';
-import { Text } from '@/shared/ui/Text/Text';
-import { ArticleView } from '@/entities/Article/model/consts/articleConsts';
+import { memo } from 'react';
 import cls from './ArticleListItem.module.scss';
 
 interface ArticleListItemSkeletonProps {
@@ -31,7 +28,7 @@ export const ArticleListItemSkeleton = memo((props: ArticleListItemSkeletonProps
                     <Skeleton width={250} height={24} className={cls.title} />
                     <Skeleton height={200} className={cls.img} />
                     <div className={cls.footer}>
-                        <Skeleton height={36} width={200}/>
+                        <Skeleton height={36} width={200} />
                     </div>
                 </Card>
             </div>
@@ -45,7 +42,7 @@ export const ArticleListItemSkeleton = memo((props: ArticleListItemSkeletonProps
                     <Skeleton className={cls.img} width={200} height={200} />
                 </div>
                 <div className={cls.infoWrapper}>
-                    <Skeleton width={130} height={16}/>
+                    <Skeleton width={130} height={16} />
                 </div>
                 <Skeleton width={150} height={16} className={cls.title} />
             </Card>

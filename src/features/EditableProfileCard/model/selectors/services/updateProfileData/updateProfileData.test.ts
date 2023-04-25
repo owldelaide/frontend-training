@@ -2,7 +2,7 @@ import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
 import { TestAsyncThunk } from '@/shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
 import { updateProfileData } from './updateProfileData';
-import { ValidateProfileError } from '@/features/EditableProfileCard/model/consts/consts';
+import { ValidateProfileError } from '../../../consts/consts';
 
 const data = {
     firstName: 'fN',
@@ -15,13 +15,13 @@ const data = {
 };
 
 describe('updateProfileData.test', () => {
-    test('success', async() => {
+    test('success', async () => {
         const thunk = new TestAsyncThunk(updateProfileData, {
             profile: {
                 form: data
             }
         });
-        thunk.api.put.mockReturnValue(Promise.resolve({data: data}));
+        thunk.api.put.mockReturnValue(Promise.resolve({ data: data }));
         const result = await thunk.callThunk();
 
         expect(thunk.api.put).toHaveBeenCalled();
@@ -29,13 +29,13 @@ describe('updateProfileData.test', () => {
         expect(result.payload).toEqual(data);
     });
 
-    test('403 status', async() => {
+    test('403 status', async () => {
         const thunk = new TestAsyncThunk(updateProfileData, {
             profile: {
                 form: data
             }
         });
-        thunk.api.put.mockReturnValue(Promise.resolve({status: 403}));
+        thunk.api.put.mockReturnValue(Promise.resolve({ status: 403 }));
         const result = await thunk.callThunk();
 
         expect(result.meta.requestStatus).toBe('rejected');
@@ -44,10 +44,10 @@ describe('updateProfileData.test', () => {
         ]);
     });
 
-    test('validate error', async() => {
+    test('validate error', async () => {
         const thunk = new TestAsyncThunk(updateProfileData, {
             profile: {
-                form: {...data, firstName: ''}
+                form: { ...data, firstName: '' }
             }
         });
         const result = await thunk.callThunk();
