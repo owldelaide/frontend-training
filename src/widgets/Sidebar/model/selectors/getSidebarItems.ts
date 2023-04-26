@@ -1,10 +1,10 @@
-import ArticlesIcon from '@/shared/assets/icons/article-20-20.svg';
-import ProfileIcon from '@/shared/assets/icons/profile-20-20.svg';
-import AboutIcon from '@/shared/assets/icons/about-20-20.svg';
-import MainIcon from '@/shared/assets/icons/main-20-20.svg';
-import { createSelector } from '@reduxjs/toolkit';
 import { getUserAuthData } from '@/entities/User';
-import { RoutePath } from '@/shared/const/router';
+import AboutIcon from '@/shared/assets/icons/about-20-20.svg';
+import ArticlesIcon from '@/shared/assets/icons/article-20-20.svg';
+import MainIcon from '@/shared/assets/icons/main-20-20.svg';
+import ProfileIcon from '@/shared/assets/icons/profile-20-20.svg';
+import { getRouteAbout, getRouteArticles, getRouteMain, getRouteProfile } from '@/shared/const/router';
+import { createSelector } from '@reduxjs/toolkit';
 import { SidebarItemType } from '../types/sidebar';
 
 export const getSidebarItems = createSelector(
@@ -12,12 +12,12 @@ export const getSidebarItems = createSelector(
     (userData) => {
         const sidebarItemsList: SidebarItemType[] = [
             {
-                path: RoutePath.main,
+                path: getRouteMain(),
                 Icon: MainIcon,
                 text: 'main'
             },
             {
-                path: RoutePath.about,
+                path: getRouteAbout(),
                 Icon: AboutIcon,
                 text: 'about'
             },
@@ -26,13 +26,13 @@ export const getSidebarItems = createSelector(
         if (userData) {
             sidebarItemsList.push(
                 {
-                    path: RoutePath.profile + userData.id,
+                    path: getRouteProfile(userData.id),
                     Icon: ProfileIcon,
                     text: 'profile',
                     authOnly: true
                 },
                 {
-                    path: RoutePath.articles,
+                    path: getRouteArticles(),
                     Icon: ArticlesIcon,
                     text: 'articles',
                     authOnly: true

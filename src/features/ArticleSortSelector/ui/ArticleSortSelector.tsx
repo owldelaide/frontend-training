@@ -3,8 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { SortOrder } from '@/shared/types';
 import { Select, SelectOption } from '@/shared/ui/Select';
-import { ArticleSortField } from '../../model/consts/articleConsts';
 import cls from './ArticleSortSelector.module.scss';
+/* eslint-disable owldelaide-plugin/path-checker */
+import { ArticleSortField } from '@/entities/Article';
 
 interface ArticleSortSelectorProps {
     className?: string;
@@ -43,7 +44,7 @@ export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
             content: t('by_views')
         },
     ], [t]);
-    
+
     return (
         <div className={classNames(cls.articleSortSelector, {}, [className])}>
             <Select
