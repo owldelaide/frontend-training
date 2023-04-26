@@ -29,7 +29,8 @@ export default {
   setupFilesAfterEnv: ['<rootDir>config/jest/jest-setup.ts'],
   moduleNameMapper: {
     '\\.(s?css)$': 'identity-obj-proxy',
-    '\\.svg': path.resolve(__dirname, 'jestEmptyComponent')
+    '\\.svg': path.resolve(__dirname, 'jestEmptyComponent'),
+    '^@/(.*)$': '<rootDir>/src/$1',
   },
   globals: {
     __IS_DEV__: true,
