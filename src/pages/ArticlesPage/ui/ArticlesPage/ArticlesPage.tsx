@@ -11,30 +11,30 @@ import { articlesPageReducer } from './model/slices/articlesPageSlice';
 import { ArticleInfiniteList } from '../ArticleInfiniteList/ArticleInfiniteList';
 
 interface ArticlesPageProps {
-  className?: string;
+    className?: string;
 }
 
 const reducers: ReducersList = {
-  articlesPage: articlesPageReducer
+    articlesPage: articlesPageReducer
 };
 
 const ArticlesPage = (props: ArticlesPageProps) => {
-  const { className } = props;
-  const { t } = useTranslation();
-  const dispatch = useAppDispatch();
+    const { className } = props;
+    const { t } = useTranslation();
+    const dispatch = useAppDispatch();
 
-  const onLoadNextPart = useCallback(() => {
-    dispatch(fetchNextArticlesPage());
-  }, [dispatch]);
+    const onLoadNextPart = useCallback(() => {
+        dispatch(fetchNextArticlesPage());
+    }, [dispatch]);
 
-  return (
-    <DynamicModuleLoader reducers={reducers} removeAfterUnmount={false}>
-      <Page onScrollEnd={onLoadNextPart} className={classNames(cls.ArticlesPage, {}, [className])}>
-        <ArticlePageFilters />
-        <ArticleInfiniteList className={cls.list} />
-      </Page>
-    </DynamicModuleLoader>
-  );
+    return (
+        <DynamicModuleLoader reducers={reducers} removeAfterUnmount={false}>
+            <Page onScrollEnd={onLoadNextPart} className={classNames(cls.ArticlesPage, {}, [className])}>
+                <ArticlePageFilters />
+                <ArticleInfiniteList className={cls.list} />
+            </Page>
+        </DynamicModuleLoader>
+    );
 };
 
 export default memo(ArticlesPage);
