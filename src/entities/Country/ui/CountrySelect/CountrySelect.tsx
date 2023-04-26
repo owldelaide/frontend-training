@@ -1,7 +1,4 @@
-import { classNames } from '@/shared/lib/classNames/classNames';
-import cls from './CurrencySelect.module.scss';
 import { useTranslation } from 'react-i18next';
-import { Select } from '@/shared/ui/Select';
 import { Country } from '../../model/types/country';
 import { memo, useCallback } from 'react';
 import { ListBox } from '@/shared/ui/Popups';
@@ -14,9 +11,9 @@ interface CountrySelectProps {
 }
 
 const options = [
-    {value: Country.Russia, content: Country.Russia},
-    {value: Country.UK, content: Country.UK},
-    {value: Country.US, content: Country.US},
+    { value: Country.Russia, content: Country.Russia },
+    { value: Country.UK, content: Country.UK },
+    { value: Country.US, content: Country.US },
 ];
 
 export const CountrySelect = memo((props: CountrySelectProps) => {
@@ -45,8 +42,8 @@ export const CountrySelect = memo((props: CountrySelectProps) => {
 
     return (
         <ListBox
-            label={t('country')} 
-            onChange={onChangeHandler} 
+            label={t('country')}
+            onChange={onChangeHandler}
             value={value}
             items={options}
             defaultValue={t('input_country')}

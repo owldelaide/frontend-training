@@ -4,7 +4,6 @@ import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import { Avatar } from '@/shared/ui/Avatar';
 import { Input } from '@/shared/ui/Input';
 import { Loader } from '@/shared/ui/Loader';
-import { Select } from '@/shared/ui/Select';
 import { Text, TextAlign, TextTheme } from '@/shared/ui/Text';
 import { Profile } from '../../model/types/profile';
 import cls from './ProfileCard.module.scss';

@@ -33,11 +33,13 @@ module.exports = {
 		'@typescript-eslint',
 		'i18next',
 		'react-hooks',
-		'owldelaide-plugin'
+		'owldelaide-plugin',
+		'eslint-plugin-unused-imports'
 	],
 	'rules': {
 		'react/jsx-indent': [2, 4],
 		'react/display-name': 0,
+		'unused-imports/no-unused-imports': 'error',
 		'no-unused-vars': 'warn',
 		'@typescript-eslint/ban-ts-comment': 'warn',
 		'quotes': ['error', 'single'],
