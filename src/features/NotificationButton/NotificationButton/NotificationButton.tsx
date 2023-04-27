@@ -30,9 +30,9 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
             <Icon Svg={NotificationIcon} inverted />
         </Button>
     );
-    console.log('hey', isOpen);
+
     return (
-        <>
+        <div>
             <BrowserView>
                 <Popover
                     className={classNames('', {}, [className])}
@@ -50,6 +50,6 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
                     <NotificationList />
                 </Drawer>
             </MobileView>
-        </>
+        </div>
     );
 });

@@ -740,6 +740,13 @@
       "rate": 5,
       "feedback": "test feedback",
       "id": "r81uCcp"
+    },
+    {
+      "userId": "1",
+      "articleId": "18",
+      "rate": 1,
+      "feedback": "",
+      "id": "RC92260"
     }
   ],
   "profile-ratings": [

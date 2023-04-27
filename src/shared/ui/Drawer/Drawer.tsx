@@ -33,7 +33,6 @@ export const DrawerContent = memo((props: DrawerProps) => {
     }, [api]);
 
     useEffect(() => {
-        console.log('hey you', isOpen);
         if (isOpen) {
             openDrawer();
         }

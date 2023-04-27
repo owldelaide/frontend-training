@@ -1,7 +1,12 @@
-import { Country } from '@/entities/Country';
-import { Currency } from '@/entities/Currency';
+import { screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { componentRender } from '@/shared/lib/tests/componentRender/componentRender';
 import { Profile } from '@/entities/Profile';
-import { profileReducer } from '../../model/slice/ProfileSlice';
+import { Currency } from '@/entities/Currency';
+import { Country } from '@/entities/Country';
+import { $api } from '@/shared/api/api';
+import { EditableProfileCard } from './EditableProfileCard';
+import { profileReducer } from '../../model/selectors/slice/ProfileSlice';
 
 const profile: Profile = {
     id: '1',
@@ -22,7 +27,7 @@ const options = {
             form: profile,
         },
         user: {
-            authData: { id: '1', username: 'test'}
+            authData: { id: '1', username: 'test' }
         }
     },
     asyncReducers: {
@@ -30,15 +35,15 @@ const options = {
     },
 };
 
-describe('EditableProfileCard',  () => {
-    /*test('readonly switch', async () => {
-        componentRender(<EditableProfileCard id='1'/>, options);
+describe('EditableProfileCard', () => {
+    test('readonly switch', async () => {
+        componentRender(<EditableProfileCard id='1' />, options);
         await userEvent.click(screen.getByTestId('EditableProfileCardHeader.EditButton'));
         expect(screen.getByTestId('EditableProfileCardHeader.CancelButton')).toBeInTheDocument();
     });
 
     test('cancellation data reset', async () => {
-        componentRender(<EditableProfileCard id='1'/>, options);
+        componentRender(<EditableProfileCard id='1' />, options);
         await userEvent.click(screen.getByTestId('EditableProfileCardHeader.EditButton'));
 
         await userEvent.clear(screen.getByTestId('ProfileCard.firstname'));
@@ -76,5 +81,5 @@ describe('EditableProfileCard',  () => {
         await userEvent.click(screen.getByTestId('EditableProfileCardHeader.SaveButton'));
 
         expect(mockPutReq).toHaveBeenCalled();
-    });*/
+    });
 });

@@ -71,6 +71,7 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
 
     return (
         <AppLink
+            target={target}
             className={classNames('', {}, [className, cls[view]])}
             to={getRouteArticleDetails(article.id)}
         >

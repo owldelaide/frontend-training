@@ -1,7 +1,6 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import cls from './NotificationList.module.scss';
 import { useNotifications } from '../../api/notificationApi';
 import { VStack } from '@/shared/ui/Stack';
 import { NotificationItem } from '../NotificationItem/NotificationItem';
@@ -18,25 +17,25 @@ export const NotificationList = memo((props: NotificationListProps) => {
         pollingInterval: 5000,
     });
 
-    if(isLoading) {
+    if (isLoading) {
         return (
             <VStack
                 gap='16'
-                className={classNames(cls.notificationList, {}, [className])}
+                className={classNames('', {}, [className])}
                 max
             >
-                <Skeleton width={'100%'} border={'8px'} height={'80px'}/>
-                <Skeleton width={'100%'} border={'8px'} height={'80px'}/>
-                <Skeleton width={'100%'} border={'8px'} height={'80px'}/>
-                <Skeleton width={'100%'} border={'8px'} height={'80px'}/>
-            </VStack>            
+                <Skeleton width={'100%'} border={'8px'} height={'80px'} />
+                <Skeleton width={'100%'} border={'8px'} height={'80px'} />
+                <Skeleton width={'100%'} border={'8px'} height={'80px'} />
+                <Skeleton width={'100%'} border={'8px'} height={'80px'} />
+            </VStack>
         );
     }
 
     return (
         <VStack
             gap='16'
-            className={classNames(cls.notificationList, {}, [className])}
+            className={classNames('', {}, [className])}
             max
         >
             {data?.map(item => (
