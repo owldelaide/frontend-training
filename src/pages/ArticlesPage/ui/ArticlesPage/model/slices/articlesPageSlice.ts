@@ -4,7 +4,7 @@ import { StateSchema } from '@/app/providers/StoreProvider';
 import { Article, ArticleSortField, ArticleType, ArticleView } from '@/entities/Article';
 import { ArticlesPageSchema } from '../types/articlesPageSchema';
 import { ARTICLE_VIEW_LOCAL_STORAGE_KEY } from '@/shared/const/localStorage';
-import { SortOrder } from '@/shared/types';
+import { SortOrder } from '@/shared/types/sort';
 
 const articlesAdapter = createEntityAdapter<Article>({
     selectId: (article) => article.id,
