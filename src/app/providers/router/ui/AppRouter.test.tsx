@@ -14,7 +14,7 @@ describe('AppRouter.test', () => {
         expect(page).toBeInTheDocument();
     });
 
-    test('page was not found', async () => {
+    test('page wasn\'t found', async () => {
         componentRender(<AppRouter />, {
             route: '/randomshit'
         });
