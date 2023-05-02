@@ -13,6 +13,8 @@ import { ArticleBlockType, ArticleView } from '../../model/consts/articleConsts'
 import { Article, ArticleTextBlock } from '../../model/types/article';
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent/ArticleTextBlockComponent';
 import cls from './ArticleListItem.module.scss';
+import { AppImage } from '@/shared/ui/AppImage';
+import { Skeleton } from '@/shared/ui/Skeleton';
 
 interface ArticleListItemProps {
     className?: string;
@@ -37,7 +39,14 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
             <Icon Svg={EyeIcon} />
         </>
     );
-    const image = <img src={article.img} className={cls.img} alt={article.title} />;
+    const skeletonWidth = view === ArticleView.BIG ? '100%' : 200;
+    const skeletonHeight = view === ArticleView.BIG ? 250 : 200;
+    const image = <AppImage
+        fallback={<Skeleton width={skeletonWidth} height={skeletonHeight} />}
+        src={article.img}
+        className={cls.img}
+        alt={article.title}
+    />;
 
     if (view === ArticleView.BIG) {
         const textBlock = article.blocks.find(block => block.type === ArticleBlockType.TEXT) as ArticleTextBlock;
