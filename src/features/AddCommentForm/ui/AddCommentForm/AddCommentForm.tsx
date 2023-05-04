@@ -39,15 +39,17 @@ const AddCommentForm = memo((props: AddCommentFormProps) => {
 
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-            <HStack max gap='8' className={classNames(cls.addCommentForm, {}, [className])}>
+            <HStack max gap='8' className={classNames(cls.addCommentForm, {}, [className])} data-testid='AddCommentForm'>
                 <Input
                     placeholder={t('type_comment')}
                     value={text}
                     onChange={onCommentTextChange}
                     className={cls.input}
+                    data-testid='AddCommentForm.Input'
                 />
                 <Button
                     onClick={onSentHandler}
+                    data-testid='AddCommentForm.SendButton'
                 >
                     {t('send')}
                 </Button>

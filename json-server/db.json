@@ -549,6 +549,19 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Kotlin news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://logowik.com/content/uploads/images/kotlin.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [],
+      "id": "5rTzFc_"
     }
   ],
   "comments": [
