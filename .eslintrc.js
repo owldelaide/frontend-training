@@ -8,7 +8,8 @@ module.exports = {
 		'plugin:react/recommended',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:react/jsx-runtime',
-		'plugin:i18next/recommended'
+		'plugin:i18next/recommended',
+		'prettier'
 	],
 	'globals': {
 		__IS_DEV__: true,
