@@ -9,6 +9,7 @@ import { ArticlePageFilters } from '../ArticlePageFilters/ArticlePageFilters';
 import cls from './ArticlesPage.module.scss';
 import { fetchNextArticlesPage } from './model/services/fetchNextArticlesPage/fetchNextArticlesPage';
 import { articlesPageReducer } from './model/slices/articlesPageSlice';
+import { ArticlePageGreeting } from '@/features/ArticlePageGreeting';
 
 interface ArticlesPageProps {
     className?: string;
@@ -32,6 +33,7 @@ const ArticlesPage = (props: ArticlesPageProps) => {
             <Page onScrollEnd={onLoadNextPart} className={classNames(cls.ArticlesPage, {}, [className])} data-testid='ArticlesPage'>
                 <ArticlePageFilters />
                 <ArticleInfiniteList className={cls.list} />
+                <ArticlePageGreeting />
             </Page>
         </DynamicModuleLoader>
     );
