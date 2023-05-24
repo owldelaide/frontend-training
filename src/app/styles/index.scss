@@ -2,7 +2,7 @@
 @import "variables/global";
 @import "themes/normal";
 @import "themes/dark";
-@import "themes/purple";
+@import "themes/third";
 
 .app,
 .app_modal,
@@ -14,6 +14,13 @@
 .app {
     background: var(--bg-color);
     min-height: 100vh;
+}
+
+.app_redesigned {
+    background: var(--bg-redesigned);
+    min-height: 100vh;
+    font: var(--font-m-redesigned);
+    color: var(--text-redesigned);
 }
 
 .content-page {

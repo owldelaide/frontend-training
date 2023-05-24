@@ -12,5 +12,8 @@
         "css",
         "scss"
     ],
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.stylelint": true
+    },
 }
