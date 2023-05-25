@@ -1,0 +1,16 @@
+.Icon {
+    color: var(--icon-redesigned);
+}
+
+.button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:hover .Icon {
+    color: var(--accent-redesigned);
+}
