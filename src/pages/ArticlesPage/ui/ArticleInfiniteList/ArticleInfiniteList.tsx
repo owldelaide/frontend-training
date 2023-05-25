@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { useSearchParams } from 'react-router-dom';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
-import { Text } from '@/shared/ui/Text';
+import { Text } from '@/shared/ui/deprecated/Text';
 import { getArticlesPageError, getArticlesPageIsLoading, getArticlesPageView } from '../ArticlesPage/model/selectors/articlesPageSelectors';
 import { initArticlesPage } from '../ArticlesPage/model/services/initArticlesPage/initArticlesPage';
 import { getArticles } from '../ArticlesPage/model/slices/articlesPageSlice';
@@ -28,7 +28,7 @@ export const ArticleInfiniteList = memo((props: ArticleInfiniteListProps) => {
         dispatch(initArticlesPage(searchParams));
     });
 
-    if(error) {
+    if (error) {
         return <Text text={t('loading_error')} />;
     }
 

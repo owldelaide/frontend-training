@@ -3,7 +3,7 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './ArticleImageBlockComponent.module.scss';
-import { Text, TextAlign } from '@/shared/ui/Text';
+import { Text, TextAlign } from '@/shared/ui/deprecated/Text';
 
 interface ArticleImageBlockComponentProps {
     className?: string;
@@ -16,9 +16,9 @@ export const ArticleImageBlockComponent = memo((props: ArticleImageBlockComponen
 
     return (
         <div className={classNames('', {}, [className])}>
-            <img src={block.src} className={cls.img}/>
+            <img src={block.src} className={cls.img} />
             {block.title && (
-                <Text 
+                <Text
                     text={block.title}
                     align={TextAlign.CENTER}
                 />

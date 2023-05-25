@@ -2,7 +2,7 @@ import { ArticleTextBlock } from './../../../model/types/article';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Text } from '@/shared/ui/Text';
+import { Text } from '@/shared/ui/deprecated/Text';
 import cls from './ArticleTextBlockComponent.module.scss';
 
 interface ArticleTextBlockComponentProps {
@@ -26,7 +26,7 @@ export const ArticleTextBlockComponent = memo((props: ArticleTextBlockComponentP
                 <Text
                     text={paragraph}
                     key={paragraph}
-                    className={cls.paragraph} 
+                    className={cls.paragraph}
                 />
             ))}
         </div>

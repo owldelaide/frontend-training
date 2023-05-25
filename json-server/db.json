@@ -50,7 +50,7 @@
       "id": "1",
       "title": "Javascript news СВЕЖАЯ",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
+      "img": "https://teknotower.com/wp-content/uploads/200/11/js.png",
       "views": 1022,
       "createdAt": "26.04.2022",
       "userId": "1",
@@ -702,7 +702,8 @@
       },
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR56Ra9LGKD03SsylrScsodXGP1p3sWAg3iuXHEzaqw0b3yScE-Uxq33L_vAnR7C7bufsM&usqp=CAU",
       "jsonSettings": {
-        "isArticlesPageWasOpened": true
+        "isArticlesPageWasOpened": true,
+        "theme": "app_light_theme"
       }
     },
     {

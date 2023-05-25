@@ -7,10 +7,10 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModalLoader/DynamicModalLoader';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
-import { Avatar } from '@/shared/ui/Avatar';
-import { Icon } from '@/shared/ui/Icon';
-import { Skeleton } from '@/shared/ui/Skeleton';
-import { Text, TextAlign, TextSize } from '@/shared/ui/Text';
+import { Avatar } from '@/shared/ui/deprecated/Avatar';
+import { Icon } from '@/shared/ui/deprecated/Icon';
+import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
+import { Text, TextAlign, TextSize } from '@/shared/ui/deprecated/Text';
 import { getArticleDetailsData, getArticleDetailsError, getArticleDetailsIsLoading } from '../../model/selectors/articleDetails';
 import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArticleById';
 import { articleDetailsReducer } from '../../model/slices/ArticleDetailsSlice';
@@ -19,7 +19,7 @@ import { ArticleCodeBlockComponent } from '../ArticleCodeBlockComponent/ArticleC
 import { ArticleImageBlockComponent } from '../ArticleImageBlockComponent/ArticleImageBlockComponent';
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent/ArticleTextBlockComponent';
 import cls from './ArticleDetails.module.scss';
-import { HStack, VStack } from '@/shared/ui/Stack';
+import { HStack, VStack } from '@/shared/ui/deprecated/Stack';
 import { ArticleBlockType } from '../../model/consts/articleConsts';
 
 
