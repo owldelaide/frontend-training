@@ -1,7 +1,7 @@
 import { ArticleView } from '../../model/consts/articleConsts';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Card } from '@/shared/ui/deprecated/Card';
-import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
+import { Skeleton } from '@/shared/ui/redesigned/Skeleton';
 import { memo } from 'react';
 import cls from './ArticleListItem.module.scss';
 

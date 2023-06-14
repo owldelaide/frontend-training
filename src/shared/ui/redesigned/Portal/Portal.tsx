@@ -6,10 +6,6 @@ interface PortalProps {
     element?: HTMLElement
 }
 
-/**
- * Устарел, используем новые компоненты
- * @deprecated
- */
 export const Portal = (props: PortalProps) => {
     const {
         children,

@@ -13,8 +13,8 @@ import { ArticleBlockType, ArticleView } from '../../model/consts/articleConsts'
 import { Article, ArticleTextBlock } from '../../model/types/article';
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent/ArticleTextBlockComponent';
 import cls from './ArticleListItem.module.scss';
-import { AppImage } from '@/shared/ui/deprecated/AppImage';
-import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
+import { AppImage } from '@/shared/ui/redesigned/AppImage';
+import { Skeleton } from '@/shared/ui/redesigned/Skeleton';
 
 interface ArticleListItemProps {
     className?: string;

@@ -9,7 +9,7 @@ import { Input } from '@/shared/ui/deprecated/Input';
 import { getAddCommentFormError, getAddCommentFormText } from '../../model/selectors/addCommentFormSelectors';
 import { addCommentFormActions, addCommentFormReducer } from '../../model/slices/addCommentFormSlice';
 import cls from './AddCommentForm.module.scss';
-import { HStack } from '@/shared/ui/deprecated/Stack';
+import { HStack } from '@/shared/ui/redesigned/Stack';
 
 export interface AddCommentFormProps {
     className?: string;

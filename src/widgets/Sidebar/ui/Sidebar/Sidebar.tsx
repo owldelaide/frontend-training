@@ -6,12 +6,12 @@ import { Button, ButtonSize, ButtonTheme } from '../../../../shared/ui/deprecate
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 import cls from './Sidebar.module.scss';
 import { ThemeSwitcher } from '@/features/ThemeSwitcher';
-import { VStack } from '@/shared/ui/deprecated/Stack';
 import { LangSwitcher } from '@/features/LangSwitcher';
 import { ToggleFeatures } from '@/shared/lib/features';
 import { AppLogo } from '@/shared/ui/redesigned/AppLogo';
 import { Icon } from '@/shared/ui/redesigned/Icon';
 import ArrowIcon from '@/shared/assets/icons/arrow-bottom.svg';
+import { VStack } from '@/shared/ui/redesigned/Stack';
 
 interface SidebarProps {
     className?: string,

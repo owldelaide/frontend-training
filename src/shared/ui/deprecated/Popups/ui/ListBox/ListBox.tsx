@@ -3,10 +3,10 @@ import { Fragment, ReactNode } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { DropdownDirection } from '@/shared/types/ui';
 import { Button } from '../../../Button/Button';
-import { HStack } from '../../../Stack';
 import cls from './ListBox.module.scss';
 import { mapDirectionClass } from '../../styles/consts';
 import popupCls from '../../styles/popup.module.scss';
+import { HStack } from '@/shared/ui/redesigned/Stack';
 
 export interface ListBoxItem {
     value: string;
