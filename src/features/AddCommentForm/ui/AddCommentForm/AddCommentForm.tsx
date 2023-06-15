@@ -5,7 +5,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModalLoader/DynamicModalLoader';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Button } from '@/shared/ui/deprecated/Button';
-import { Input } from '@/shared/ui/deprecated/Input';
+import { Input } from '@/shared/ui/redesigned/Input';
 import { getAddCommentFormError, getAddCommentFormText } from '../../model/selectors/addCommentFormSelectors';
 import { addCommentFormActions, addCommentFormReducer } from '../../model/slices/addCommentFormSlice';
 import cls from './AddCommentForm.module.scss';
