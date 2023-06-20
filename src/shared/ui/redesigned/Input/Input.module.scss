@@ -4,7 +4,6 @@
     border-radius: 48px;
     padding: 8px 16px;
     border: 2px solid var(--icon-redesigned);
-    height: 38px;
     width: 100%;
 }
 
@@ -44,4 +43,16 @@
 .addonLeft,
 .addonRight {
     display: flex;
+}
+
+.s {
+    height: 32px;
+}
+
+.m {
+    height: 38px;
+}
+
+.l {
+    height: 44px;
 }
