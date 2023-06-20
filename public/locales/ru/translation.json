@@ -25,5 +25,9 @@
   "your_feedback": "Ваш отзыв",
   "close": "Закрыть",
   "send": "Отправить",
-  "thanks_for_rate": "Спасибо за оценку!"
+  "thanks_for_rate": "Спасибо за оценку!",
+  "settings": "Настройки",
+  "newDesign": "Новый дизайн",
+  "oldDesign": "Старый дизайн",
+  "interface": "Интерфейс"
 }
