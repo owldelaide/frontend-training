@@ -5,14 +5,15 @@ import { NotificationButton } from '@/features/NotificationButton';
 import { getRouteArticleCreate } from '@/shared/const/router';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { AppLink, AppLinkTheme } from '@/shared/ui/deprecated/AppLink';
-import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button';
+import { Button as ButtonDeprecated, ButtonTheme } from '@/shared/ui/deprecated/Button';
 import { HStack } from '@/shared/ui/redesigned/Stack';
 import { Text, TextTheme } from '@/shared/ui/deprecated/Text';
 import { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import cls from './Navbar.module.scss';
-import { ToggleFeatures } from '@/shared/lib/features';
+import { ToggleFeatures, toggleFeatures } from '@/shared/lib/features';
+import { Button } from '@/shared/ui/redesigned/Button';
 
 interface NavbarProps {
     className?: string,
@@ -65,18 +66,42 @@ export const Navbar = memo(({ className }: NavbarProps) => {
     }
 
     return (
-        <header className={classNames(cls.Navbar, {}, [className])}>
-            <Button
-                theme={ButtonTheme.CLEAR_INVERTED}
-                className={cls.links}
-                onClick={onOpenModal}
-            >
-                {t('log_in')}
-            </Button>
-            {isAuthModal && (<LoginModal
-                isOpen={isAuthModal}
-                onClose={onCloseModal}
-            />)}
+        <header className={classNames(
+            toggleFeatures({
+                name: 'isAppRedesigned',
+                off: () => cls.Navbar,
+                on: () => cls.NavbarRedesigned
+            }),
+            {},
+            [className]
+        )}>
+            <ToggleFeatures
+                feature='isAppRedesigned'
+                off={
+                    <ButtonDeprecated
+                        theme={ButtonTheme.CLEAR_INVERTED}
+                        className={cls.links}
+                        onClick={onOpenModal}
+                    >
+                        {t('log_in')}
+                    </ButtonDeprecated>
+                }
+                on={
+                    <Button
+                        variant='clear'
+                        className={cls.links}
+                        onClick={onOpenModal}
+                    >
+                        {t('log_in')}
+                    </Button>
+                }
+            />
+            {isAuthModal && (
+                <LoginModal
+                    isOpen={isAuthModal}
+                    onClose={onCloseModal}
+                />
+            )}
         </header>
     );
 });

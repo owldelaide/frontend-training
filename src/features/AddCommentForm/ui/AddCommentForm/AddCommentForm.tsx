@@ -4,12 +4,16 @@ import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModalLoader/DynamicModalLoader';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Button } from '@/shared/ui/deprecated/Button';
-import { Input } from '@/shared/ui/redesigned/Input';
+import { Button as ButtonDeprecated } from '@/shared/ui/deprecated/Button';
+import { Input as InputDeprecated } from '@/shared/ui/deprecated/Input';
 import { getAddCommentFormError, getAddCommentFormText } from '../../model/selectors/addCommentFormSelectors';
 import { addCommentFormActions, addCommentFormReducer } from '../../model/slices/addCommentFormSlice';
 import cls from './AddCommentForm.module.scss';
 import { HStack } from '@/shared/ui/redesigned/Stack';
+import { ToggleFeatures } from '@/shared/lib/features';
+import { Input } from '@/shared/ui/redesigned/Input';
+import { Button } from '@/shared/ui/redesigned/Button';
+import { Card } from '@/shared/ui/redesigned/Card';
 
 export interface AddCommentFormProps {
     className?: string;
@@ -39,21 +43,46 @@ const AddCommentForm = memo((props: AddCommentFormProps) => {
 
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-            <HStack max gap='8' className={classNames(cls.addCommentForm, {}, [className])} data-testid='AddCommentForm'>
-                <Input
-                    placeholder={t('type_comment')}
-                    value={text}
-                    onChange={onCommentTextChange}
-                    className={cls.input}
-                    data-testid='AddCommentForm.Input'
-                />
-                <Button
-                    onClick={onSentHandler}
-                    data-testid='AddCommentForm.SendButton'
-                >
-                    {t('send')}
-                </Button>
-            </HStack>
+            <ToggleFeatures
+                feature='isAppRedesigned'
+                off={
+                    <HStack max gap='8' className={classNames(cls.addCommentForm, {}, [className])} data-testid='AddCommentForm'>
+                        <InputDeprecated
+                            placeholder={t('type_comment')}
+                            value={text}
+                            onChange={onCommentTextChange}
+                            className={cls.input}
+                            data-testid='AddCommentForm.Input'
+                        />
+                        <ButtonDeprecated
+                            onClick={onSentHandler}
+                            data-testid='AddCommentForm.SendButton'
+                        >
+                            {t('send')}
+                        </ButtonDeprecated>
+                    </HStack>
+                }
+                on={
+                    <Card padding='24' max border='partial'>
+                        <HStack max gap='16' className={classNames(cls.addCommentFormRedesigned, {}, [className])} data-testid='AddCommentForm'>
+                            <Input
+                                placeholder={t('type_comment')}
+                                value={text}
+                                onChange={onCommentTextChange}
+                                className={cls.input}
+                                data-testid='AddCommentForm.Input'
+                            />
+                            <Button
+                                onClick={onSentHandler}
+                                data-testid='AddCommentForm.SendButton'
+                            >
+                                {t('send')}
+                            </Button>
+                        </HStack>
+                    </Card>
+                }
+            />
+
         </DynamicModuleLoader>
     );
 });

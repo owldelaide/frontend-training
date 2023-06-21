@@ -666,6 +666,12 @@
       "userId": "2",
       "text": "new comment",
       "id": "E1wLWhj"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "id": "5KxRd6n"
     }
   ],
   "users": [
@@ -682,7 +688,7 @@
         "isAppRedesigned": true
       },
       "jsonSettings": {
-        "theme": "app_light_theme",
+        "theme": "app_purple_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false,
         "isArticlesPageWasOpened": true
@@ -703,7 +709,7 @@
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR56Ra9LGKD03SsylrScsodXGP1p3sWAg3iuXHEzaqw0b3yScE-Uxq33L_vAnR7C7bufsM&usqp=CAU",
       "jsonSettings": {
         "isArticlesPageWasOpened": true,
-        "theme": "app_light_theme"
+        "theme": "app_dark_theme"
       }
     },
     {
