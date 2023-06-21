@@ -28,5 +28,9 @@
   "leave_feedback": "Оставьте отзыв о статье",
   "rate_article": "Оцените статью",
   "welcome_to_articles_page": "Добро пожаловать на страницу статей",
-  "greeting_text": "Здесь вы можете искать и читать статьи"
+  "greeting_text": "Здесь вы можете искать и читать статьи",
+  "{{count}} views_zero": "{{count}} просмотров",
+  "{{count}} views_one": "{{count}} просмотр",
+  "{{count}} views_few": "{{count}} просмотра",
+  "{{count}} views_many": "{{count}} просмотр"
 }

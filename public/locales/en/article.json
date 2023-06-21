@@ -28,5 +28,8 @@
   "leave_feedback": "Please, leave your feedback",
   "rate_article": "Rate article",
   "welcome_to_articles_page": "Welcome to articles page",
-  "greeting_text": "Here you can read and search articles"
+  "greeting_text": "Here you can read and search articles",
+  "{{count}} views_zero": "{{count}} views",
+  "{{count}} views_one": "{{count}} view",
+  "{{count}} views_other": "{{count}} views"
 }
