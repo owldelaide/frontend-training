@@ -1,4 +1,3 @@
-import { useJsonSettings } from '@/entities/User';
 import { ThemeContext } from '@/shared/lib/context/ThemeContext';
 import { ReactNode, useEffect, useMemo, useState } from 'react';
 import { Theme } from '../../../../shared/const/theme';
@@ -17,16 +16,15 @@ const ThemeProvider = (props: ThemeProviderProps) => {
         initialTheme
     } = props;
 
-    const { theme: defaultTheme } = useJsonSettings();
     const [theme, setTheme] = useState<Theme>(initialTheme || fallbackTheme || Theme.LIGHT);
     const [isThemeInited, setIsThemeInited] = useState(false);
 
     useEffect(() => {
-        if (!isThemeInited && defaultTheme) {
-            setTheme(defaultTheme);
+        if (!isThemeInited && initialTheme) {
+            setTheme(initialTheme);
             setIsThemeInited(true);
         }
-    }, [defaultTheme, isThemeInited]);
+    }, [initialTheme, isThemeInited]);
 
     useEffect(() => {
         document.body.className = theme;

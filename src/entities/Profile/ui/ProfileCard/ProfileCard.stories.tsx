@@ -3,6 +3,9 @@ import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
 import { ProfileCard } from './ProfileCard';
 import avatar from '@/shared/assets/tests/test.jpg';
+import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { Theme } from '@/shared/const/theme';
+import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
 
 export default {
     title: 'entities/Profile/ProfileCard',
@@ -30,8 +33,17 @@ Primary.args = {
     data: data
 };
 
+export const PrimaryRedesigned = Template.bind({});
+PrimaryRedesigned.args = {
+    data: data
+};
+PrimaryRedesigned.decorators = [
+    NewDesignDecorator,
+    ThemeDecorator(Theme.DARK)
+];
+
 export const WithError = Template.bind({});
-WithError.args = {error: 'true'};
+WithError.args = { error: 'true' };
 
 export const Loading = Template.bind({});
-Loading.args = {isLoading: true};
+Loading.args = { isLoading: true };
