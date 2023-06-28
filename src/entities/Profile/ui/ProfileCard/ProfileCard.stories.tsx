@@ -28,11 +28,6 @@ const data = {
 
 const Template: ComponentStory<typeof ProfileCard> = (args) => <ProfileCard {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
-    data: data
-};
-
 export const PrimaryRedesigned = Template.bind({});
 PrimaryRedesigned.args = {
     data: data
