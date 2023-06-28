@@ -1,10 +1,10 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import cls from './ArticleListItemDeprecated.module.scss';
+import cls from '../ArticleListItem.module.scss';
 import { ArticleListItemProps } from '../ArticleListItem';
-import { Text } from '@/shared/ui/redesigned/Text';
-import { Icon } from '@/shared/ui/redesigned/Icon';
+import { Text } from '@/shared/ui/deprecated/Text';
+import { Icon } from '@/shared/ui/deprecated/Icon';
 import { ArticleBlockType, ArticleView } from '../../../model/consts/articleConsts';
 import { AppImage } from '@/shared/ui/redesigned/AppImage';
 import { Skeleton } from '@/shared/ui/deprecated/Skeleton';

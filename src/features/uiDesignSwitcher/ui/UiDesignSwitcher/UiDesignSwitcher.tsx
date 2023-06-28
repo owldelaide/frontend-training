@@ -1,13 +1,16 @@
 import { useTranslation } from 'react-i18next';
 import { memo, useState } from 'react';
-import { getFeatureFlags, updateFeatureFlag } from '@/shared/lib/features';
+import { ToggleFeatures, getFeatureFlags, updateFeatureFlag } from '@/shared/lib/features';
 import { ListBox } from '@/shared/ui/redesigned/Popups';
+import { ListBox as ListBoxDeprecated } from '@/shared/ui/deprecated/Popups';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { getUserAuthData } from '@/entities/User';
 import { useSelector } from 'react-redux';
 import { HStack } from '@/shared/ui/redesigned/Stack';
 import { Text } from '@/shared/ui/redesigned/Text';
+import { Text as TextDeprecated } from '@/shared/ui/deprecated/Text';
 import { Skeleton } from '@/shared/ui/redesigned/Skeleton';
+import { Skeleton as SkeletonDeprecated } from '@/shared/ui/deprecated/Skeleton';
 
 interface UiDesignSwitcherProps {
     className?: string;
@@ -46,18 +49,36 @@ export const UiDesignSwitcher = memo((props: UiDesignSwitcherProps) => {
     };
 
     return (
-        <HStack>
-            <Text text={t('interface')} />
-            {isLoading
-                ? <Skeleton height={40} width={150} />
-                : <ListBox
-                    value={isAppRedesigned ? 'newDesign' : 'oldDesign'}
-                    items={items}
-                    onChange={onChange}
-                    className={className}
-                />
+        <ToggleFeatures
+            feature='isAppRedesigned'
+            off={
+                <HStack>
+                    <TextDeprecated text={t('interface')} />
+                    {isLoading
+                        ? <SkeletonDeprecated height={40} width={150} />
+                        : <ListBoxDeprecated
+                            value={isAppRedesigned ? 'newDesign' : 'oldDesign'}
+                            items={items}
+                            onChange={onChange}
+                            className={className}
+                        />
+                    }
+                </HStack>
             }
-
-        </HStack>
+            on={
+                <HStack>
+                    <Text text={t('interface')} />
+                    {isLoading
+                        ? <Skeleton height={40} width={150} />
+                        : <ListBox
+                            value={isAppRedesigned ? 'newDesign' : 'oldDesign'}
+                            items={items}
+                            onChange={onChange}
+                            className={className}
+                        />
+                    }
+                </HStack>
+            }
+        />
     );
 });

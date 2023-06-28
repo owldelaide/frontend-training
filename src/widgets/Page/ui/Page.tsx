@@ -54,7 +54,7 @@ export const Page = memo((props: PageProps) => {
         <main
             className={
                 classNames(
-                    toggleFeatures({ name: 'isAppRedesigned', on: () => 'cls.pageRedesigned', off: () => 'cls.page' }),
+                    toggleFeatures({ name: 'isAppRedesigned', on: () => cls.pageRedesigned, off: () => cls.page }),
                     {},
                     [className]
                 )

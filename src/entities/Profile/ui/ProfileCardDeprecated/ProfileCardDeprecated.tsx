@@ -57,9 +57,9 @@ export const ProfileCardDeprecated = memo((props: ProfileCardProps) => {
     };
 
     return (
-        <VStack gap='8' max className={classNames(cls.ProfileCard, mods, [className])}>
+        <VStack gap='16' max className={classNames(cls.ProfileCardDeprecated, mods, [className])}>
             {data?.avatar && (
-                <HStack justify='center' className={cls.avatarWrapper}>
+                <HStack justify='center' className={cls.avatarWrapper} max>
                     <AvatarDeprecated src={data?.avatar} />
                 </HStack>
             )}

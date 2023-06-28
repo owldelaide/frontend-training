@@ -1,6 +1,6 @@
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Card } from '@/shared/ui/deprecated/Card';
-import { Input } from '@/shared/ui/redesigned/Input';
+import { Input } from '@/shared/ui/deprecated/Input';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
